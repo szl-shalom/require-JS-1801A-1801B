@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .list li {
+            width: 100%;
+            height: 600px;
+            background: red;
+            text-align: center;
+            line-height: 600px;;
+            color:#fff;
+            font-size: 200px;;
+        }
+
+        .list li:nth-child(even) {
+            background: green;
+        }
+        .list1{
+            position: fixed;
+            left:100px;
+            top:50%;
+            transform: translate(0,-50%);
+        }
+        .list1 li{
+            background: #555;
+            border: 1px solid #ccc;
+            line-height: 40px;
+            height:40px;
+            text-align: center;
+            color:#fff;
+            width:120px;
+        }
+
+        .list1 li.active{
+            background: pink;
+
+        }
+    </style>
+</head>
+
+<body style="height:10000px;"> 
+    <h1>123123</h1>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <ul class="list1">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

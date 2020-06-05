@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:500px;
+    margin: auto;
+}
+
+.list{
+    width:300px;
+    border:1px solid #ccc;
+    display: none;
+}
+.content{
+    width:300px;
+    height:40px;
+    border:1px solid #ccc;
+}
+.list span{ 
+    width:100%;
+    height:40px;
+    display: inline-block;
+}
+.list span b{
+    display: none;
+}
+
+.list span:hover{ 
+    background: pink;
+    color:#fff;
+}
+
+.search{
+    width:300px;
+    border:1px solid #ccc;
+    /* display: none; */
+    height:40px;
+}

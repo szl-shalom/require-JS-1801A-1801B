@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .wrap {
+            width: 600px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3);
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .content {
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 500%;
+            position: fixed;
+            background: #fff;
+        }
+
+        .content p {
+            width: 300px;
+            height: 50px;
+        }
+
+        .content input {
+            float: right;
+            width: 220px;
+            height: 40px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <button>添加数据</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>爱好</th>
+                    <th>电话</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>男</td>
+                    <td>女</td>
+                    <td>13176635635</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- <div class="mask"></div>
+    <div class="content">
+        <p>
+            <span>用户名:</span>
+            <input type="text" placeholder="请输入用户名">
+        </p>
+        <p>
+            <span>年龄:</span>
+            <input type="text" placeholder="请输入年龄">
+        </p>
+        <p>
+            <span>性别:</span>
+            <input type="text" placeholder="请输入性别">
+        </p>
+        <p>
+            <span>爱好:</span>
+            <input type="text" placeholder="请输入爱好">
+        </p>
+        <p>
+            <span>电话:</span>
+            <input type="text" placeholder="请输入电话">
+        </p>
+        <button>提交数据</button>
+        <button>取消</button>
+    </div> -->
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

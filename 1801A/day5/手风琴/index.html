@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 1200px;
+            margin: auto;
+            height: 500px;
+        }
+
+        ul li {
+            width: 200px;
+            height: 500px;
+            overflow: hidden;
+            float: left;
+            /* transition: width 1s; */
+            position: relative;
+        }
+
+        /* ul li:hover {
+            width: 300px;
+        }
+
+        ul li:hover .header-mask {
+            height: 0;
+        }
+
+        ul li:hover .bottom-mask {
+            margin-left: -300px;
+        } */
+
+        ul li img {
+            width: 300px;
+            height: 500px;
+        }
+
+        ul li .header-mask {
+            width: 300px;
+            height: 450px;
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            /* transition: height 1s; */
+
+        }
+
+        ul li .bottom-mask {
+            position: absolute;
+            height: 50px;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .3);
+            width: 600px;
+            /* transition: margin-left 1s; */
+            color: #fff;
+        }
+
+        .left,
+        right {
+            width: 300px;
+            float: left;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <img src="img/1.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="bottom-mask">
+                <div class="left">
+                    左遮罩
+                </div>
+                <div class="right">
+                    右遮罩
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/2.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="bottom-mask">
+                <div class="left">
+                    左遮罩
+                </div>
+                <div class="right">
+                    右遮罩
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/3.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="bottom-mask">
+                <div class="left">
+                    左遮罩
+                </div>
+                <div class="right">
+                    右遮罩
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

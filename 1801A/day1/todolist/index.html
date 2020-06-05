@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        h1 span {
+            float: right;
+        }
+
+        ul li span:nth-child(3) {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="text" class="ipt">
+        <div class="box">
+            <h1>正在进行4
+                <span class="span-header">1</span>
+            </h1>
+            <ul class="ul-header">
+                <li>
+                    <input type="checkbox">
+                    <span>item1</span>
+                    <span class="del">X</span>
+                </li>
+            </ul>
+
+            <h1>已经完成
+                <span class="span-footer">1</span>
+            </h1>
+            <ul class="ul-footer">
+                <li>
+                    <input type="checkbox" checked>
+                    <span>item2</span>
+                    <span class="del">X</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

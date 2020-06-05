@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1200px;
+            height: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 7200px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+        }
+
+        img {
+            width: 1200px;
+            height: 600px;
+            float: left;
+        }
+        .prev{
+            position: absolute;
+            left:0;
+            top:50%;
+            transform: translate(0,-50%);
+            font-size: 50px;
+        }
+
+        .next{
+            position: absolute;
+            right:0;
+            top:50%;
+            transform: translate(0,-50%);
+            font-size: 50px;
+        }
+        .page{
+            position: absolute;
+            bottom:20px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+        .page li{
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            background: rgba(0,0,0,.3);
+            float: left;
+            margin-left: 10px;
+        }
+
+        .page li.active{
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+        <ul class="page">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

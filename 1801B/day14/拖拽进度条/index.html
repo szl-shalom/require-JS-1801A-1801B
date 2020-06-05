@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .progress {
+            width: 1050px;
+            height: 30px;
+            margin: auto;
+            background: #555;
+            border-radius: 25px;
+            margin-top: 20px;
+            position: relative;
+
+        }
+
+        .slide {
+            width: 50%;
+            height: 100%;
+            background: red;
+            border-radius: 25px;
+        }
+
+        .box {
+            height: 50px;
+            position: absolute;
+            top: -10px;
+            width: 50px;
+            border-radius: 50%;
+            background: red;
+            left: 500px;
+            /* transition: left 1s; */
+        }
+
+        .box span {
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="slide"></div>
+        <div class="box">
+            <span>50%</span>
+        </div>
+    </div>
+    <script>
+        var box = document.querySelector(".box"),
+            x,
+            wrap = document.querySelector(".progress"),
+            flag = false,
+            span = document.querySelector("span"),
+            slide = document.querySelector(".slide")
+
+        box.onmousedown = function (e) {
+            x = e.offsetX
+            flag = 1
+        }
+
+
+        document.onmousemove = function (e) {
+            if (flag) {
+                var xx = e.pageX - x - wrap.offsetLeft;
+                if (xx < 0) xx = 0
+                if (xx > 1000) xx = 1000
+                box.style.left = xx + "px"
+                slide.style.width = xx + 25 + "px"
+                span.innerHTML = Math.round(xx / 1000 * 100) + "%"
+            }
+
+        }
+
+
+        document.onmouseup = function () {
+            flag = 0;
+        }
+    </script>
+</body>
+
+</html>

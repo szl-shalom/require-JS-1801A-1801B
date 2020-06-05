@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: auto;
+        }
+
+        ul {
+            /* padding-left: 20px; */
+        }
+
+        ul li {
+            line-height: 40px;
+            color: #fff;
+        }
+
+        ul>li {
+            background: #4B5058;
+        }
+
+        ul>li>ul>li {
+            background: #33363D;
+            padding-left: 20px;
+        }
+        b{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="ul">
+            <li>
+                <b>&gt;</b>
+                <span>内容1</span>
+                <ul>
+                    <li>
+                        <b>&gt;</b>
+                        <span>内容1-1</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>内容1-2</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>内容1-3</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>&gt;</b>
+                <span>内容2</span>
+                <ul>
+                    <li>
+                        <b>&gt;</b>
+                        <span>内容2-1</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2020-02-24 08:16:19
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2020-04-01 10:02:19
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1050px;
+            margin: auto;
+        }
+
+        .progress {
+            background: #555;
+            height: 30px;
+            width: 100%;
+            border-radius: 25px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .slide {
+            height: 100%;
+            width: 50%;
+            background: red;
+            border-radius: 25px;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: -10px;
+            left: 475px;
+            /* transition: left 1s; */
+        }
+
+        .box span {
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="progress">
+            <div class="slide"></div>
+            <div class="box">
+                <span>100%</span>
+            </div>
+        </div>
+    </div>  
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

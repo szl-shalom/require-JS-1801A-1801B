@@ -1,0 +1,39 @@
+*{
+    margin: 0;;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.swiper{
+    width:1000px;
+    height:600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container{
+    width:5000px;
+    height: 600px;
+    position: absolute;
+    left:0;
+}
+
+.container img{
+    width:1000px;
+    height:600px;
+    float: left;
+}
+
+.prev,.next{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    font-size:36px;
+    color:#fff;
+}
+
+.next{
+    right:0;
+}

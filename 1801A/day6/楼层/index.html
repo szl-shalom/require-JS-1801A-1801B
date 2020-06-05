@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            height: 200px;
+            background: red;
+        }
+
+        .floor {
+            width: 100%;
+        }
+
+        .floor li {
+            background: red;
+            height: 500px;
+            line-height: 500px;
+            text-align: center;
+            font-size: 100px;
+            color:#fff;
+        }
+
+        .floor li:nth-child(odd) {  
+            background: green;
+        }
+        .left-floor{
+            position: fixed;
+            left:50px;
+            transform: translate(0,-50%);
+            top:50%;
+        }
+        .left-floor li{
+            width:120px;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #ccc;
+        }
+
+        .left-floor li.active{
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">我是头部</div>
+        <ul class="floor">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+
+
+    </div>
+
+    <ul class="left-floor">
+        <li class="active">楼层1</li>
+        <li>楼层2</li>
+        <li>楼层3</li>
+        <li>楼层4</li>
+        <li>楼层5</li>
+        <li>楼层6</li>
+        <li>楼层7</li>
+        <li>楼层8</li>
+        <li>楼层9</li>
+        <li>楼层10</li>
+    </ul>
+    <script src="../增删改/lib/require.js" data-main="main"></script>
+</body>
+
+</html>

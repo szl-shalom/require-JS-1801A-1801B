@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.wrap{
+    width:500px;
+    margin: auto;
+}
+.content{
+    width:300px;
+    height:40px;
+    border: 1px solid #ccc;
+}
+.list{
+    width:300px;
+    border:1px solid #ccc;
+    display: none;
+}
+
+.list.active{
+    display: block;
+}
+
+.list ul li{
+    height:40px;
+    line-height: 40px;
+    border-bottom:1px solid #ccc;
+}
+
+
+
+.list ul li:hover{
+    background: #C5F5E7;
+}

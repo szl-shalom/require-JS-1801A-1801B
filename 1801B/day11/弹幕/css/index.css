@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:1000px;
+    height:600px;
+    margin: 150px auto;
+}
+.left{
+    width:800px;
+    height:100%;
+    float: left;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.left span{
+    /* 强制不换行 */
+   white-space: nowrap; 
+   height:50px;
+   display: block;
+   cursor: pointer;
+}
+.right{
+    width:200px;
+    height:100%;
+    float: left;
+    border: 1px solid #ccc;
+
+}
+
+
+.right .header{
+    height:10%;
+}
+
+.right .middle{
+    height:80%;
+    padding:20px;
+    overflow: auto;
+}
+
+.right .bottom{
+    height:10%;
+}

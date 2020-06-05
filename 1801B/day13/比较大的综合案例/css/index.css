@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+   width:1000px;
+   margin: auto; 
+}
+.header{
+    height: 200px;  
+    background: red;
+}
+
+.nav{
+    width:100%;
+    height:80px;
+    line-height: 80px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.nav span.active{
+   color:red;
+   font-weight: bold;
+}
+
+.nav.fixed{
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0);
+    width:1000px;
+
+}
+.sort,.exit{
+    float: left;
+}
+.timer{
+    float: right;
+}
+.list{
+    margin-top: 20px;
+}
+
+.list dl{
+    width:200px;
+    height:250px;
+    float: left;
+    padding:5px;
+}
+
+.list dl dt{
+    width:100%;
+    height:150px;
+}
+
+.list dl dt img{
+    width:100%;
+    height:100%;
+}
+
+.list dd p span{
+    color:red;
+    font-size: 26px;
+}
+
+.list dd p s{
+    color:#ccc;
+}
+
+.right-slide{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100%;
+    width:50px;
+    background: rgba(0, 0, 0, .5);
+    color:#fff;
+}
+
+
+.right-slide ul{
+    top:50%;
+    position: absolute;
+    transform: translate(0,-50%);
+    width:100%;
+}
+.right-slide ul li {
+    width:100%;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    border: 1px solid #ccc;
+}

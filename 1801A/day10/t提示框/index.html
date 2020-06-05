@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            margin:5000px 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>点我</button>
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function () {
+            var div = document.createElement("div");
+            div.style = `
+                width:200px;
+                height:400px;
+                position:fixed;
+                left:${btn.getBoundingClientRect().left + 220}px;
+                top:${btn.getBoundingClientRect().top+btn.offsetHeight / 2 - 200}px;
+                background:red;
+            `
+            document.body.appendChild(div);
+        })
+    </script>
+</body>
+
+</html>

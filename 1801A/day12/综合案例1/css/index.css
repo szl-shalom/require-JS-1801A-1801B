@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background:url("../img/1.jpg") no-repeat; 
+    background-size: 100% 100%;
+}
+
+
+.wrap{
+    width:1000px;
+    margin: 150px auto;
+}
+
+.header{
+    width:600px;
+    margin: auto;
+    font-weight: bold;
+}
+.header span{
+    width:100px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.header span.active{
+    border-bottom:1px red solid;
+}
+
+.search{
+    width:800px;
+    height:80px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.search .user-search{
+    width:800px;
+    height:80px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.search .list{
+    position: absolute;
+    top:80px;
+    width:100%;
+    background: #fff;
+    display:none;
+    z-index: 999;
+}
+
+.search .list li{
+    border-bottom:1px solid #ccc;
+    height: 40px;
+    padding-left:50px;
+    line-height: 40px;
+}
+
+.swiper{
+    width:1000px;
+    height:500px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+}
+.container{
+    width:2000px;
+    height:400px;
+    position: absolute;
+}
+.container .slide{
+    width:1000px;
+    float: left;
+    height:400px;
+}
+
+.slide dl{
+    width:200px;
+    height:200px;
+    float: left;
+}
+
+.slide dl dt{
+    width:150px;
+    height:150px;
+    margin: auto;
+}
+.slide dl dt img{
+    width:100%;
+    height:100%;
+}
+
+.slide dd{
+    text-align: center;
+}
+
+.page{
+    width:100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+.page li{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0,.3);
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.page li.active{
+    background: red;
+}
+
+.icon{
+    position: fixed;
+    bottom: 20px;
+    right:100px;
+    width:50px;
+    display: block;
+    transform: rotateZ(45deg);
+}

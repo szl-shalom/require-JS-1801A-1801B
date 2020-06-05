@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul{
+    width:900px;
+    height:900px;
+}
+ul li {
+    width:300px;
+    height: 300px;
+    border: 1px solid tomato;
+    border-radius: 25px;
+    float: left;
+}
+ul li  span{
+    width:50%;
+    height:50%;
+    text-align: center;
+    line-height: 150px;
+    display: block;
+    float: left;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 36px;
+}
+.right{
+    position: fixed;
+    right:50px;
+    top:0;
+}
+
+span{
+    width:120px;
+    height:40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

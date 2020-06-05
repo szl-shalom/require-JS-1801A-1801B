@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <table border="1" class="car">
+            <thead>
+                <tr>
+                    <th>选择</th>
+                    <th>商品名称</th>
+                    <th>商品单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="checkOne">
+                    </td>
+                    <td>唐人街探案3</td>
+                    <td>38</td>
+                    <td>
+                        <button class="red">-</button>
+                        <span>2</span>
+                        <button class="add">+</button>
+                    </td>
+                    <td>76</td>
+                    <td>
+                        <button class="del">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="checkOne">
+                    </td>
+                    <td>紧急营救</td>
+                    <td>39</td>
+                    <td>
+                        <button class="red">-</button>
+                        <span>1</span>
+                        <button class="add">+</button>
+                    </td>
+                    <td>39</td>
+                    <td>
+                        <button class="del">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="checkOne">
+                    </td>
+                    <td>疯狂的外星人2</td>
+                    <td>40</td>
+                    <td>
+                        <button class="red">-</button>
+                        <span>2</span>
+                        <button class="add">+</button>
+                    </td>
+                    <td>80</td>
+                    <td>
+                        <button class="del">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 class="allPrice">
+            商品总价：0元
+        </h1>
+        <div class="every">
+            <p>
+                <span>姓名：</span>
+                <input type="text" class="username">
+                <b>输入是错误</b>
+            </p>
+        </div>
+
+        <div class="every">
+            <p>
+                <span>手机：</span>
+                <input type="text" class="tel">
+                <b>输入是错误</b>
+            </p>
+        </div>
+
+        <div class="every">
+            <p>
+                <span>地址：</span>
+                <select name="" id="province">
+                    <option value="">请选择省</option>
+                </select>
+                <select name="" id="city">
+                    <option value="">请选择市</option>
+                </select>
+                <select name="" id="area">
+                    <option value="">请选择区</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

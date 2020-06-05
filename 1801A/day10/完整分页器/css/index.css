@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:800px;
+    margin: auto;
+}
+table{
+    width:100%;
+    text-align: center;
+    border-collapse:collapse;
+}
+
+.bottom{
+    margin-top: 20px;;
+}
+ul{
+    display: inline-block;
+}
+
+ul li{
+    display: inline-block;
+    padding:6px 12px;
+    border: 1px solid #ccc;
+}
+
+ul li.active{
+    background: pink;
+}
+
+.bottom button{
+    padding:6px 12px;
+}
+.code{
+    width:50px;
+}
+.bottom input,.bottom select{
+    height:34px;
+}
+
+

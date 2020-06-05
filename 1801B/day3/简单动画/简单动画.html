@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/velocity.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var V = Velocity, div = document.querySelector("div");
+        // 第一个参数 是添加动画的元素
+        // 第二个参数 是最终的CSS样式
+        // 第三个参数 是配置信息
+
+        // V(div, { width: 500 })
+        // V(div, { height: 500 })
+        // V(div, { borderRadius: "50%" })
+
+        // V(div, {
+        //     width: "500px",
+        //     height: 500,
+        //     borderRadius: "50%",
+        //     marginLeft: "100px"
+        // }, {
+        //     duration: 2000, //动画时长
+        //     begin: function () { //在动画开始之前执行
+        //         console.log("动画开始了！！！")
+        //     },
+        //     complete: function () {//在动画结束之后执行
+        //         console.log("动画结束了！！！")
+        //     },
+        //     progress: function () {//在动画执行过程中 多次执行
+        //         console.log("动画正在进行！！！")
+        //     },
+        //     // loop: true, //是数字 表示循环几次  是布尔值true 表示无限循环
+        //     // display: "none", //在动画结束时，最后的display样式
+        //     easing:"spring"  //缓动动画
+        // });
+
+        // 关键字动画
+        // V(div, "slideDown", 5000) //下拉
+        // V(div, "slideUp", 5000) //收起
+        // V(div, "fadeIn") //淡入
+        // V(div, "fadeOut") //淡出
+
+
+
+
+    </script>
+</body>
+
+</html>

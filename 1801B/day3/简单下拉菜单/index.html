@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: auto;
+        }
+        ul li{
+            color: #fff;
+            line-height: 40px;
+        }
+        ul>li {
+            background: #555;
+        }
+
+        ul>li>ol>li {
+            background: #333;
+            padding-left:20px;
+        }
+        b{
+            /* transform: rotateZ(90deg); */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="list">
+            <!-- <li>
+                <b>&gt;</b>
+                <span>item1</span>
+                <ol>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-1</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-2</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-3</span>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <b>&gt;</b>
+                <span>item2</span>
+                <ol>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-1</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-2</span>
+                    </li>
+                    <li>
+                        <b>&gt;</b>
+                        <span>item1-3</span>
+                    </li>
+                </ol>
+            </li> -->
+        </ul>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

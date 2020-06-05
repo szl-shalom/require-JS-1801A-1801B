@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.swiper{
+    width:1200px;
+    margin: auto;
+    height:600px;
+    position: relative;
+}
+
+img{
+    width:0px;
+    height:0px;
+    float: left;
+    transition: all 1s;
+
+}
+
+img.active{
+    float: right;
+    width:1200px;
+    height:600px;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 1200px;
+            margin: auto;
+        }
+
+        ul li {
+            width: 200px;
+            overflow: hidden;
+            float: left;
+            height: 500px;
+            /* transition: width .5s; */
+            position: relative;
+        }
+
+        ul li img {
+            width: 400px;
+            height: 500px;
+        }
+
+        /* ul li:hover {
+            width: 400px;
+        } */
+
+        .header-mask {
+            width: 400px;
+            height: 400px;
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            /* transition: height .5s; */
+        }
+
+        .footer-mask {
+            width: 800px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .7);
+            height: 100px;
+            color: #fff;
+            font-size: 36px;
+            /* transition: left .5s; */
+        }
+
+        .left,
+        .right {
+            width: 400px;
+            height: 100px;
+            float: left;
+        }
+
+        /* ul li:hover {
+            width: 400px;
+        }
+
+        ul li:hover .header-mask {
+            height: 0;
+        }
+
+        ul li:hover .footer-mask {
+            left: -400px
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <img src="img/1.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="footer-mask">
+                <div class="left">左盒子</div>
+                <div class="right">有盒子</div>
+            </div>
+        </li>
+
+        <li>
+            <img src="img/2.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="footer-mask">
+                <div class="left">左盒子</div>
+                <div class="right">有盒子</div>
+            </div>
+        </li>
+
+        <li>
+            <img src="img/3.jpg" alt="">
+            <div class="header-mask"></div>
+            <div class="footer-mask">
+                <div class="left">左盒子</div>
+                <div class="right">有盒子</div>
+            </div>
+        </li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

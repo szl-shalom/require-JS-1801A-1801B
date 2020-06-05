@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:1200px;
+    margin: auto;
+}
+
+.left{
+    width:1000px;
+}
+.left ul{
+    width:1000px;
+}
+.left ul li{
+    width:80px;
+    height:80px;
+    margin: 10px;;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.left ul li.active{
+   background: skyblue;
+}
+
+.sit span{
+    padding:6px 12px;
+    border: 1px solid #ccc;
+    display: inline-block;;
+}

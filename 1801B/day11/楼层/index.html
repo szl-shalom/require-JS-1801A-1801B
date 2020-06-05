@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .list {
+            width: 800px;
+            margin: auto;
+        }
+
+        .list li {
+            width: 800px;
+            height: 600px;
+            background: yellowgreen;
+            font-size: 100px;
+            text-align: center;
+            line-height: 600px;
+            color: #fff;
+        }
+
+        .list li:nth-child(even) {
+            width: 800px;
+            height: 600px;
+            background: greenyellow;
+        }
+
+        .list1 {
+            position: fixed;
+            left: 100px;
+            top: 50%;
+            transform: translate(0, -50%);
+
+        }
+
+        .list1 li {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #ccc;
+            ;
+        }
+
+        .list1 li.active {
+            background: red;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <ul class="list1">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrap {
+            width: 200px;
+            overflow: hidden;
+            height: 100%;
+            background: #555;
+            color: #fff;
+            transition: width 1s;
+        }
+
+        .wrap.active {
+            width: 50px
+        }
+        ul>li.active{
+            border-left:2px solid blue;
+        }
+        ul>li>ol>li {
+            padding-left: 50px;
+        }
+        b{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <b class="icon">||||</b>
+        <ul class="list">
+            <li>
+                <span>item1</span>
+                <b>&gt;</b>
+                <ol>
+                    <li>
+                        <span>item1-1</span>
+                    </li>
+                    <li>
+                        <span>item1-2</span>
+                    </li>
+                    <li>
+                        <span>item1-3</span>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <span>item1</span>
+                <b>&gt;</b>
+                <ol>
+                    <li>
+                        <span>item1-1</span>
+                    </li>
+                    <li>
+                        <span>item1-2</span>
+                    </li>
+                    <li>
+                        <span>item1-3</span>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <span>item1</span>
+                <b>&gt;</b>
+                <ol>
+                    <li>
+                        <span>item1-1</span>
+                    </li>
+                    <li>
+                        <span>item1-2</span>
+                    </li>
+                    <li>
+                        <span>item1-3</span>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

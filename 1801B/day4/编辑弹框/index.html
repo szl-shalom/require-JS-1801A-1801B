@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 600px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="text" class="title">
+        <input type="text" class="username">
+        <input type="date" class="date">
+        <button class="btn">提交</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>标题</th>
+                    <th>发布人</th>
+                    <th>日期</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>元旦发假吗</td>
+                    <td>八维1</td>
+                    <td>2019-12-31</td>
+                    <td>
+                        <button>编辑</button>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>元旦发假吗</td>
+                    <td>八维2</td>
+                    <td>2019-12-31</td>
+                    <td>
+                        <button>编辑</button>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>元旦发假吗</td>
+                    <td>八维3</td>
+                    <td>2019-12-31</td>
+                    <td>
+                        <button>编辑</button>
+                        <button>删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

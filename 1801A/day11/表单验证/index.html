@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <script>
+        // 正则表达式
+        // var res = /正则表达式主体/修饰符     //正则字面量
+        // var res1 = new RegExp(正则表达式主体, 修饰符) //通过构造函数
+        // 元字符
+        //  \d 代表数字   \D 表达非数字
+        //  \w 代表 数字 字母 下划线_
+        //  \s 代表 空格
+        //  \b 代表单词边界
+
+        // 修饰符
+        // g 全局匹配
+        // m 多行匹配
+        // i 忽略大小写
+
+        // 限定符
+        // ^ 表示开头
+        // $ 表示结尾
+
+        // 量词
+        // n+ 一个或多个
+        // n* 0个或者1个或者多个
+        // n? 0个或一个
+        // n{5} 匹配5个n
+        // n{5,} 至少5个n
+        // n{5,8} 匹配5到8个n  包含5和8
+
+
+        // []
+        // [123] 匹配1或者2或者3
+        // [0-9] 匹配0-9之间的任意数字  === \d
+        // [0-9A-Za-z_] 匹配数字 字母 下划线  === \w
+        // [^0-9]  匹配非数字  === \D
+
+
+        // 分组
+        // (123)|(234)  匹配123或者234
+        // (123|234) 匹配123或者234
+
+
+        // 手机号正则表达式
+        // /^1[3-9]\d{9}$/ 匹配11位手机号
+        // /^\w+@\w+\.(com|con|cn|net)$/ 邮箱
+        // /[\u4e00-\u9fa5]/ 汉字
+
+        // 正则方法
+        // 正则表达式.test(字符串)
+        // var regTel = /^1[3-9]\d{9}$/
+        // var res = regTel.test("13171996138")
+        // console.log(res)
+
+        // 
+    </script>
+</body>
+
+</html>

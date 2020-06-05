@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="swiper">
+        <img src="img/1.jpg" alt="" class="active">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+    </div>
+
+    <script>
+        var index = 0,
+            swiper = document.querySelector(".swiper");
+        setInterval(function () {
+            swiper.children[index].classList.remove("active")
+            index = ++index > 4 ? 0 : index;
+            swiper.children[index].classList.add("active")
+        }, 2000)
+
+    </script>
+</body>
+
+</html>

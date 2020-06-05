@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.wrap{
+    width:500px;
+    margin: auto;
+}
+.content,.search{
+    width:300px;
+    height:40px;
+    border: 1px solid #ccc;
+    margin-top: 10px;;
+}
+
+.content li{
+   display: inline-block;
+}
+.list{
+    width:300px;
+    border:1px solid #ccc;
+    display: none;
+}
+
+.list li{
+    height:50px;
+    line-height: 50px;;
+    border-bottom:1px solid #ccc;
+}
+.list li b{
+    display: none;
+}
+.list li:hover{
+   background:skyblue;
+}
+

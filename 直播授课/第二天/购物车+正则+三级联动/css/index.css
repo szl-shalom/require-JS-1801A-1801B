@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:1200px;
+    margin: auto;
+}
+table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table tr{
+    height:40px;
+}
+table button{
+    padding:0 6px;
+}
+
+.every{
+    margin: 20px 0;
+}
+.every span{
+    line-height: 40px;
+}
+
+.every input{
+    height:40px;
+    width:500px;
+}
+
+.every select{
+    height:40px;
+    width:150px;
+}

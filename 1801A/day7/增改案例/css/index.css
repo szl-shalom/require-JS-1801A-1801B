@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.wrap{
+    width:800px;
+    margin: auto;
+}
+
+table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+button{
+    width:120px;
+    height:30px;
+}
+
+.mask{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background: rgba(0,0,0,.3);
+}
+
+.content{
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width:800px;
+}
+.con{
+    width:50%;
+    float: left;
+}
+.con p{
+    height:80px;
+}
+
+.con p span{
+    width:20%;
+    float: right;
+    height:40px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.con p input{
+    float: right;
+    width:70%;
+    height:40px;
+    margin-top: 20px;
+}
+
+.con p select{
+    float: right;
+    width:70%;
+    height:40px;
+    margin-top: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background: url("../img/1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrap{
+    width:1000px;
+    margin: 50px auto;
+}
+.header{
+    width:600px;
+    margin: auto;
+}
+.header span{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    color:#fff;
+}
+
+.header span.active{
+    border-bottom:1px red solid;
+}
+.search{
+    width:800px;
+    height:80px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.search .user-search{
+    width:100%;
+    height:100%;
+    border-radius: 100px;
+    padding-left:20px;
+}
+
+.search .list{
+    position: absolute;
+    top:100px;
+    width:100%;
+    background: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    display: none;
+}
+
+.list li {
+    height:50px;
+    line-height: 50px;
+    border-bottom:1px solid #ccc;
+    padding-left:50px;
+}
+.swiper{
+    width:1000px;
+    height:500px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.swiper .container{
+    width:2000px;
+    height:400px;
+}
+
+.slide{
+    width:1000px;
+    height:400px;
+    float: left;
+}
+
+.slide dl {
+    width:200px;
+    height:200px;
+    float: left;
+}
+
+
+.slide dl  dt{
+    width:150px;
+    height:150px;
+    margin: auto;
+}
+.slide dl dt img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.slide dl dd{
+    text-align: center;
+    color:#fff;
+    line-height: 50px;
+}
+
+.page{
+    width:100%;
+    text-align:center;
+}
+.page li{
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgba(0,0,0,.3);
+    margin:0 20px;
+}
+
+.page li.active{
+    background: red;
+}
+.icon{
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width:50px;
+    transform: rotateZ(45deg);
+    
+}

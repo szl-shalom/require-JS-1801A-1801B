@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:500px;
+    margin: auto;
+}
+
+.content{
+    width:300px;
+    height:40px;
+    border:1px solid #ccc;
+}
+.list{
+    border: 1px solid #ccc;
+    padding:20px;
+    width:300px;
+    display: none;
+}
+.list.active{
+    display: block;
+}

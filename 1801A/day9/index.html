@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["a", "b", "c", "d", "f", "g", "h"]
+        //          0    1    2    3    4
+        var res1 = arr.slice(0, 2)   // 第一组     2   *  0
+        var res2 = arr.slice(2, 4)   // 第二组     2   *  1
+        var res3 = arr.slice(4, 6)   // 第三组     2   *  2
+        var res4 = arr.slice(6, 8)   // 第四组     2   *  3
+        //                   38,40             20      2   *   19
+        //  第20组
+
+
+
+        // data是大数组
+        // num 是每几条数据显示一页
+        // index 是当前分组的下标
+        // // 获取对应分组的数据
+        // data.slice(num * index, num*index+num)
+        //                          num * (index+1)
+
+
+
+        // data 大数据
+        // num 是每页显示的个数
+        // maxlength 是分页器页码最大值
+        maxlength =  Math.ceil(data.length / num)
+    </script>
+</body>
+
+</html>

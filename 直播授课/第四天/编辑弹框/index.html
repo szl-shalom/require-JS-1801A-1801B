@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <button class="add">新增</button>
+            <span>
+                搜索 <input type="text" class="search">
+            </span>
+        </div>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>史志龙</td>
+                    <td>24</td>
+                    <td>男</td>
+                    <td>
+                        <button class="mod">
+                            编辑
+                        </button>
+                        <button class="del">
+                            删除
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+<!-- 
+    <div class="mask"></div>
+    <div class="content">
+        <input type="text" class="username">
+        <input type="text" class="age">
+        <input type="text" class="sex">
+        <button class="submit">确定</button>
+        <button class="cancel">取消</button>
+    </div> -->
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

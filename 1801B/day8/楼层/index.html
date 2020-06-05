@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background: red;
+        }
+
+        .nav {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background: skyblue;
+            width: 1200px;
+        }
+
+        .nav.fixed {
+            position: fixed;
+            top: 0;
+
+        }
+
+        .swiper {
+            height: 600px;
+            text-align: center;
+            line-height: 600px;
+            background: pink;
+        }
+
+        .list li {
+            height: 500px;
+            background: tomato;
+            line-height: 500px;
+            text-align: center;
+            font-size: 100px;
+            color: #fff;
+        }
+
+        .list li:nth-child(even) {
+            background: violet;
+
+        }
+
+        .list-left {
+            left: 20px;
+            position: fixed;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .list-left li {
+            height: 40px;
+            line-height: 40px;
+            background: #999;
+            border: 1px solid #ccc;
+            color: #fff;
+            text-align: center;
+            width: 120px;
+        }
+
+        .list-left li.active {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            我是头部
+        </div>
+        <div class="nav">
+            我是吸顶
+        </div>
+        <div class="swiper">
+            我是轮播
+        </div>
+        <ul class="list">
+            <li>楼层1</li>
+            <li>楼层2</li>
+            <li>楼层3</li>
+            <li>楼层4</li>
+            <li>楼层5</li>
+            <li>楼层6</li>
+            <li>楼层7</li>
+            <li>楼层8</li>
+            <li>楼层9</li>
+            <li>楼层10</li>
+        </ul>
+    </div>
+
+    <ul class="list-left">
+        <li class="active">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        <li>item9</li>
+        <li>item10</li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+
+    <script>
+        // function fun() {
+        //     var a = 1;
+        //     return function(){
+        //         return a;
+        //     }
+        // }
+
+        // var b = fun()()
+        // console.log(b)
+        var a;
+        console.log(a)
+
+    </script>
+</body>
+
+</html>

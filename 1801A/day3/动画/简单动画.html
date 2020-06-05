@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/velocity.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background: red;
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            /* transform: scale(1.5); */
+            /* transform: rotateZ(90deg); */
+            /* transform: skew(-30deg); */
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        // var V = Velocity;
+        // 函数的第一个参数 是添加动画的元素节点
+        // 函数的第二个参数 是最终的CSS的样式
+        // 函数的第三个参数 是配置
+        // var div = document.querySelector("div")
+        // V(div, { width: 500 })
+        // V(div, { height: 500 })
+        // V(div, {
+        //     width: 500,
+        //     height: "500px",
+        //     "border-radius": "50%",
+        //     "margin-left": "100px",
+        // }, {
+        //     duration: 2000, //动画时长
+        //     // 动画开始之前执行begin函数
+        //     begin: function () {
+        //         console.log("动画开始了！！！")
+        //     },
+        //     // 动画结束之后
+        //     complete: function () {
+        //         console.log("动画完成了！！！！")
+        //     },
+        //     // 动画正在进行函数
+        //     progress: function () {
+        //         console.log("动画正在进行")
+        //     },
+        //     // loop: 1, //是数字循环几次  是布尔值true无限循环
+        //     // display: "none",//在动画完成之后的最终的display样式
+        //     // easing: "ease" //动画 缓动形式
+        // })
+
+        // 关键字动画
+        // V(div, "slideDown", 5000) // 下拉动画
+        // V(div, "slideUp", 5000) // 收起动画
+        // V(div, "fadeIn", 2000) //淡入
+        // V(div, "fadeOut", 2000) //淡出
+        // V(div, "reverse") //恢复
+        // V(div, "pause") //暂停动画
+        // V(div, "resume") // 继续动画
+        // V(div, "finish") // 完成动画
+        // V(div, "stop") // 终止动画
+
+        /* transform: translateY(100px); */
+        // V(div, {
+        //     skewX: "45deg"
+        // })
+    </script>
+</body>
+
+</html>
